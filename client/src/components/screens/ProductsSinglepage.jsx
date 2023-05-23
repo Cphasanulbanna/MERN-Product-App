@@ -104,11 +104,15 @@ const RightBox = styled.div`
 `;
 
 const GallerImage = styled.div`
-    width: 150px;
+    width: 200px;
     height: 150px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 5px;
     overflow: hidden;
+    background-color: #fff;
+    img {
+        object-fit: contain;
+    }
 `;
 
 const Title = styled.h2`

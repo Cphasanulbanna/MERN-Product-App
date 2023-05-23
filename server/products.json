@@ -20,9 +20,9 @@
         "category": "smatphone",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PF6vywQC5Ms4teTK1OSWqCQ_pA_lhXJOJKWN6EkR77byfaFb-jCdn5asUPS9HOpnt4U&usqp=CAU",
         "imageGallery": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PF6vywQC5Ms4teTK1OSWqCQ_pA_lhXJOJKWN6EkR77byfaFb-jCdn5asUPS9HOpnt4U&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PF6vywQC5Ms4teTK1OSWqCQ_pA_lhXJOJKWN6EkR77byfaFb-jCdn5asUPS9HOpnt4U&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PF6vywQC5Ms4teTK1OSWqCQ_pA_lhXJOJKWN6EkR77byfaFb-jCdn5asUPS9HOpnt4U&usqp=CAU"
+            "https://images.samsung.com/is/image/samsung/p5/global/galaxywallpapers/obj-phoneN.png?$ORIGIN_PNG$",
+            "https://cutewallpaper.org/21/note-10-background/Galaxy-Note10-and-Note10+-Official-Samsung-Galaxy-Site.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZB77hsrBOg_2U5SA5hp18IrS88MmWgyZcVBzvRRAlJ7ylzOCbmwcQZRVABNK0IGpGQKQ&usqp=CAU"
         ]
     },
     {
@@ -33,9 +33,9 @@
         "category": "food",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTix0ruy7fyy1LqLztGr2VQJD8SYQbU-ecAWQ&usqp=CAU",
         "imageGallery": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTix0ruy7fyy1LqLztGr2VQJD8SYQbU-ecAWQ&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTix0ruy7fyy1LqLztGr2VQJD8SYQbU-ecAWQ&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTix0ruy7fyy1LqLztGr2VQJD8SYQbU-ecAWQ&usqp=CAU"
+            "https://e0.pxfuel.com/wallpapers/666/531/desktop-wallpaper-most-viewed-peanut-butter.jpg",
+            "https://eatsmartmovemoreva.org/wp-content/uploads/2017/11/Screen-Shot-2017-11-13-at-10.06.18-AM-1.png",
+            "https://www.bigbasket.com/media/uploads/p/l/40127453-2_5-pintola-all-natural-peanut-butter-unsweetened-crunchy.jpg"
         ]
     },
     {
@@ -44,11 +44,11 @@
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti doloremque minus obcaecati dignissimos nesciunt",
         "price": 49.99,
         "category": "food",
-        "image": "https://cdn.shopify.com/s/files/1/0618/5648/1500/products/DSC00006copy.jpg?v=1667655723&width=997",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/LT/JD/PG/8819600/crunchy-original-peanut-butter-500x500.jpg",
         "imageGallery": [
+            "https://cdn01.pharmeasy.in/dam/products_otc/B82007/myfitness-peanut-butter-original-crunchy-510g-jar-6.1-1641794135.jpg",
             "https://cdn.shopify.com/s/files/1/0618/5648/1500/products/DSC00006copy.jpg?v=1667655723&width=997",
-            "https://cdn.shopify.com/s/files/1/0618/5648/1500/products/DSC00006copy.jpg?v=1667655723&width=997",
-            "https://cdn.shopify.com/s/files/1/0618/5648/1500/products/DSC00006copy.jpg?v=1667655723&width=997"
+            "https://m.media-amazon.com/images/I/41HadDInqZL.jpg"
         ]
     }
 ]
