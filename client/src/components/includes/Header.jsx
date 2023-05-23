@@ -15,6 +15,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
@@ -180,14 +181,19 @@ export function Header() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: "none", sm: "block" } }}
+                    <Link
+                        to={"/"}
+                        style={{ color: "#fff" }}
                     >
-                        Shopify
-                    </Typography>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="div"
+                            sx={{ display: { xs: "none", sm: "block" } }}
+                        >
+                            Shopify
+                        </Typography>
+                    </Link>
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
