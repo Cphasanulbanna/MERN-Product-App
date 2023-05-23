@@ -10,6 +10,7 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -30,4 +31,9 @@ button {
 
 p {
     font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
 }

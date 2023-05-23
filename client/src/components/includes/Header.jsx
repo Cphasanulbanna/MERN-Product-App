@@ -217,7 +217,7 @@ export function Header() {
                             color="inherit"
                         >
                             <Badge
-                                badgeContent={17}
+                                badgeContent={1}
                                 color="error"
                             >
                                 <NotificationsIcon />
