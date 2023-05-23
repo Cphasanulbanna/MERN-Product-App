@@ -1,45 +1,49 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
 
-function App() {
-    const [count, setCount] = useState(0);
+import { createTheme, ThemeProvider } from "@mui/material";
 
-    return (
-        <>
-            <div>
-                <a
-                    href="https://vitejs.dev"
-                    target="_blank"
-                >
-                    <img
-                        src={viteLogo}
-                        className="logo"
-                        alt="Vite logo"
-                    />
-                </a>
-                <a
-                    href="https://react.dev"
-                    target="_blank"
-                >
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-        </>
-    );
-}
-
-export default App;
+export const App = () => {
+    const theme = createTheme({
+        breakpoints: {
+            values: {
+                sm: 320,
+                sm2: 360,
+                sm3: 420,
+                sm4: 480,
+                sm5: 540,
+                sm6: 640,
+                sm7: 680,
+                md: 768,
+                md1: 900,
+                md2: 980,
+                lg: 1080,
+                lg2: 1280,
+                xl: 1400,
+                xl2: 1536,
+            },
+        },
+        components: {
+            MuiTypography: {
+                variants: [
+                    {
+                        props: {
+                            variant: "body2",
+                        },
+                        style: {
+                            fontSize: 14,
+                        },
+                    },
+                    {
+                        props: {
+                            variant: "body3",
+                        },
+                        style: {
+                            fontSize: 12,
+                        },
+                    },
+                ],
+            },
+        },
+    });
+    return <ThemeProvider theme={theme}>App</ThemeProvider>;
+};
