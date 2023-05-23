@@ -1,6 +1,12 @@
 import React from "react";
 
+//MUI theme
 import { createTheme, ThemeProvider } from "@mui/material";
+
+//components
+import { AppRouter } from "./components/routes/AppRouter";
+
+//components
 
 export const App = () => {
     const theme = createTheme({
@@ -45,5 +51,9 @@ export const App = () => {
             },
         },
     });
-    return <ThemeProvider theme={theme}>App</ThemeProvider>;
+    return (
+        <ThemeProvider theme={theme}>
+            <AppRouter />
+        </ThemeProvider>
+    );
 };
