@@ -31,7 +31,7 @@ app.get("/cart", (req, res) => {
     if (cart.length === 0)
         return res
             .status(200)
-            .json({ message: "Cart is empty, please add some products", products: cart });
+            .json({ message: "Cart is empty, please add some products", cart: cart });
     res.status(200).json({ message: "Success", products: cart });
 });
 
@@ -49,6 +49,19 @@ app.post("/cart", (req, res) => {
     const productToAdd = products?.find((product) => product?.id == id);
     cart.push(productToAdd);
     res.status(200).json({ message: "product added to cart", product: productToAdd });
+});
+
+//delete from cart api
+app.delete("/cart", (req, res) => {
+    const { id } = req.body;
+    if (!id) return res.status(400).json({ message: "product id is required" });
+
+    if (cart.length) {
+        cart = cart.filter((product) => product.id != id);
+        res.status(200).json({ message: `product with [id:${id}] is deleted from cart` });
+    } else {
+        res.status(200).json({ message: `cart is empty , please add some products` });
+    }
 });
 
 //error route
