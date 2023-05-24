@@ -17,9 +17,18 @@ const PORT = 8000;
 //get all products api
 app.get("/products", (req, res) => {
     const { category } = req.body;
+    const { query } = req.query;
+    let filteredProducts = [];
     if (category) {
-        const filteredProducts = products.filter((product) =>
+        filteredProducts = products.filter((product) =>
             product.category.toLowerCase().includes(category.toLowerCase())
+        );
+        return res.status(200).json({ products: filteredProducts });
+    }
+
+    if (query) {
+        filteredProducts = products.filter((product) =>
+            product.name.toLowerCase().includes(query.toLowerCase())
         );
         return res.status(200).json({ products: filteredProducts });
     }
