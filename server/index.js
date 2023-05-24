@@ -1,10 +1,15 @@
 //modules
 const express = require("express");
 const cors = require("cors");
+const moment = require("moment");
 
 const products = require("./products.json");
 let cart = [];
 let orders = [];
+const today = moment(new Date()).format("DD-MM-YYYY");
+const time = moment(new Date()).format("LT");
+
+console.log(time);
 
 const app = express();
 app.use(express.json());
@@ -73,9 +78,12 @@ app.post("/order", (req, res) => {
     const productToBuy = products.find((product) => product.id == id);
     productToBuy.quantity = quantity ? quantity : 1;
     productToBuy["total"] = quantity ? quantity * productToBuy.price : productToBuy.price;
+    productToBuy["order_date"] = `${today}, ${time}`;
+    productToBuy.status = "ordered";
     orders.push(productToBuy);
 
     res.status(200).json({
+        order_date: productToBuy?.order_date,
         totalAmount: quantity ? `$ ${productToBuy?.total}` : productToBuy.price,
         message: `order placed for product with id:${id}`,
         orderedProduct: productToBuy,
@@ -87,6 +95,18 @@ app.get("/orders", (req, res) => {
     if (orders.length === 0)
         return res.status(200).json({ message: "You are not ordered any product", orders: orders });
     res.status(200).json({ message: "Success", products: orders });
+});
+
+// fetch single product order history
+app.get("/orders/:id", (req, res) => {
+    const { id } = req.params;
+    if (!id) return res.status(400).json({ message: "product id is required" });
+
+    if (orders.length === 0)
+        return res.status(200).json({ message: "You are not ordered any product", orders: orders });
+
+    const orderedProduct = orders.find((product) => product.id == id);
+    res.status(200).json({ message: "Successs", product: orderedProduct });
 });
 
 //error route
