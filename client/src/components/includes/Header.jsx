@@ -58,6 +58,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export function Header() {
+    const [input, setInput] = React.useState("");
+    console.log(input);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -201,6 +203,7 @@ export function Header() {
                         <StyledInputBase
                             placeholder="Search…"
                             inputProps={{ "aria-label": "search" }}
+                            onChange={(e) => setInput(e.target.value)}
                         />
                     </Search>
                     <Box sx={{ flexGrow: 1 }} />
