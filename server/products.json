@@ -4,6 +4,7 @@
         "name": "Multivitamin 200 Tablets",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti doloremque minus obcaecati dignissimos nesciunt rem eos porro ea veniam voluptates dolore consequuntur, unde assumenda culpa. Illum molestiae perspiciatis eum.",
         "price": 19.99,
+        "quantity": 1,
         "category": "health suppliment",
         "image": "http://cdn.shopify.com/s/files/1/0321/0264/5895/products/GIMainImage_bbadb345-83f6-4611-8427-bf4b94e028ad.jpg?v=1663748449",
         "imageGallery": [
@@ -17,6 +18,7 @@
         "name": "Galaxy S22 ",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti doloremque minus obcaecati dignissimos nesciunt",
         "price": 29.99,
+        "quantity": 1,
         "category": "smatphone",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PF6vywQC5Ms4teTK1OSWqCQ_pA_lhXJOJKWN6EkR77byfaFb-jCdn5asUPS9HOpnt4U&usqp=CAU",
         "imageGallery": [
@@ -30,6 +32,7 @@
         "name": "Peanut butter",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti doloremque minus obcaecati dignissimos nesciunt",
         "price": 49.99,
+        "quantity": 1,
         "category": "food",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTix0ruy7fyy1LqLztGr2VQJD8SYQbU-ecAWQ&usqp=CAU",
         "imageGallery": [
@@ -43,6 +46,7 @@
         "name": "Peanut butter",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti doloremque minus obcaecati dignissimos nesciunt",
         "price": 49.99,
+        "quantity": 1,
         "category": "food",
         "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/LT/JD/PG/8819600/crunchy-original-peanut-butter-500x500.jpg",
         "imageGallery": [

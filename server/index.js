@@ -26,17 +26,6 @@ app.get("/products/:id", (req, res) => {
     res.status(400).json({ message: `No product found with id :${id}` });
 });
 
-//add to cart api
-app.post("/cart", (req, res) => {
-    const { id } = req.body;
-    console.log(id);
-    if (!id) return res.status(400).json({ message: "product id is required" });
-
-    const productToAdd = products?.find((product) => product?.id == id);
-    cart.push(productToAdd);
-    res.status(200).json({ message: "product added to cart", product: productToAdd });
-});
-
 //get cart products api
 app.get("/cart", (req, res) => {
     if (cart.length === 0)
@@ -44,6 +33,22 @@ app.get("/cart", (req, res) => {
             .status(200)
             .json({ message: "Cart is empty, please add some products", products: cart });
     res.status(200).json({ message: "Success", products: cart });
+});
+
+//add to cart api
+app.post("/cart", (req, res) => {
+    const { id } = req.body;
+    if (!id) return res.status(400).json({ message: "product id is required" });
+
+    const productInCart = cart.find((product) => product.id == id);
+    if (productInCart)
+        return res
+            .status(400)
+            .json({ message: `product with [id:${id}]  is already added in the cart` });
+
+    const productToAdd = products?.find((product) => product?.id == id);
+    cart.push(productToAdd);
+    res.status(200).json({ message: "product added to cart", product: productToAdd });
 });
 
 //error route
