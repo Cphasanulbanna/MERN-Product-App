@@ -6,7 +6,7 @@
         "price": 19.99,
         "quantity": 1,
         "status": "",
-        "category": "health suppliment",
+        "category": "health-suppliment",
         "image": "http://cdn.shopify.com/s/files/1/0321/0264/5895/products/GIMainImage_bbadb345-83f6-4611-8427-bf4b94e028ad.jpg?v=1663748449",
         "imageGallery": [
             "http://cdn.shopify.com/s/files/1/0321/0264/5895/products/GIMainImage_bbadb345-83f6-4611-8427-bf4b94e028ad.jpg?v=1663748449",
@@ -21,7 +21,7 @@
         "price": 29.99,
         "quantity": 1,
         "status": "",
-        "category": "smatphone",
+        "category": "smartphone",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PF6vywQC5Ms4teTK1OSWqCQ_pA_lhXJOJKWN6EkR77byfaFb-jCdn5asUPS9HOpnt4U&usqp=CAU",
         "imageGallery": [
             "https://images.samsung.com/is/image/samsung/p5/global/galaxywallpapers/obj-phoneN.png?$ORIGIN_PNG$",

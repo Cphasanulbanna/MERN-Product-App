@@ -9,8 +9,6 @@ let orders = [];
 const today = moment(new Date()).format("DD-MM-YYYY");
 const time = moment(new Date()).format("LT");
 
-console.log(time);
-
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -18,6 +16,13 @@ const PORT = 8000;
 
 //get all products api
 app.get("/products", (req, res) => {
+    const { category } = req.body;
+    if (category) {
+        const filteredProducts = products.filter((product) =>
+            product.category.toLowerCase().includes(category.toLowerCase())
+        );
+        return res.status(200).json({ products: filteredProducts });
+    }
     res.status(200).json({ products: products });
 });
 
